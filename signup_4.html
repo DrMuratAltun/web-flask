@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #6a89cc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        form {
+            background-color: #82ccdd;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #60a3bc;
+            background-color: #fff;
+            color: #333;
+        }
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #44ee00;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #3800af;
+        }
+    </style>
+</head>
+<body>
+    <form action="/kayitol" method="post">
+        <h1>Kayıt Ol</h1>
+        <label for="name">İsim:</label>
+        <input type="text" id="name" name="name" placeholder="İsminizi giriniz" required>
+        <label for="email">E-Posta:</label>
+        <input type="email" id="email" name="email" placeholder="Email adresinizi giriniz" required>
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" placeholder="Şifrenizi giriniz" required>
+        <input type="submit" value="Kayıt Ol">
+    </form>
+</body>
+</html>

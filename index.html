@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Murat ALTUN Flask Uygulamaları</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
+        .header { background-color: #f8f9fa; padding: 20px; text-align: center; }
+        .content { padding: 20px; }
+        .social-links { list-style: none; padding: 0; text-align: center; margin-top: 20px; }
+        .social-links li { display: inline-block; margin: 0 10px; }
+        .social-links a { text-decoration: none; color: #000; }
+        .social-links a i { font-size: 24px; color: #555; }
+        .users-list { margin-top: 20px; }
+        .footer { background-color: #f8f9fa; text-align: center; padding: 10px; margin-top: 20px; }
+        .btn { background-color: #007bff; color: #fff; padding: 10px 15px; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dr. Murat ALTUN Flask Uygulamaları</h1>
+    </div>
+    <div class="content">
+        <p>Kitaplarım ve çalışmalarım hakkında daha fazla bilgi için aşağıdaki sosyal medya hesaplarımı takip edebilirsiniz.</p>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/drmurataltun/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/drmurataltun" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+        <div class="users-list">
+ <h1>Kayıtlı Kullanıcılar</h1>
+    <ul>
+        {% for name in user_names %}
+            <li>{{ name[0] }}</li>  <!-- Kullanıcı ismini liste elemanı olarak yazdır -->
+        {% endfor %}
+    </ul>
+        </div>
+        <div class="footer">
+            <a href="/signup" class="btn">Kayıt Ol</a>
+        </div>
+    </div>
+</body>
+</html>
